@@ -54,6 +54,7 @@ html, body {
 html {
     display: table;
     margin: 8%;
+    overflow: hidden;
 }
 
 body {
@@ -67,10 +68,10 @@ body::before {
     position: fixed;
     top: 0;
     left: 0;
-    width: 200%;
-    height: 200%;
+    width: 100%;
+    height: 100%;
     background-image: radial-gradient(circle at 2px 2px, #333 2px, transparent 0);
-    background-size: 50px 50px;
+    background-size: 32px 32px;
     transform: translate(0, 0);
     animation: scrollBg 10s linear infinite;
     z-index: -1;
@@ -81,7 +82,7 @@ body::before {
         transform: translate(0, 0)
     }
     100% {
-        transform: translate(-50px, -50px)
+        transform: translate(-32px, -32px)
     }
 }
 
@@ -89,32 +90,45 @@ h1 {
     font-family: 'Adwaita Mono', monospace;
     text-align: center;
     color: #8ad6b7;
-    font-size: 8vw;
+    font-size: 4vw;
 }
 
 h2 {
     font-family: 'Adwaita Sans', sans-serif;
     text-align: center;
     color: #fefefe;
-    font-size: 4vw;
+    font-size: 2vw;
 }
 
 img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
-}
-
-@media (max-width: 600px) {
-    img {
-        width: 80%;
-    }
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 32%;
 }
 
 p {
     font-family: 'Adwaita Sans', sans-serif;
     text-align: center;
     color: #fefefe;
-    font-size: 2vw;
+    font-size: 1vw;
 }
+
+@media (max-width: 1000px) {
+    img {
+        width: 80%;
+    }
+    
+    h1 {
+        font-size: 8vw;
+    }
+
+    h2 {
+        font-size: 4vw;
+    }
+    
+    p {
+        font-size: 2vw;
+    }
+}
+
