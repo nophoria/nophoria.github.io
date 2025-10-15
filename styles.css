@@ -1,32 +1,50 @@
 @font-face {
     font-family: 'Adwaita Mono';
-    src: url(assets/fonts/AdwaitaMono-Regular.ttf);
+    src: url(assets/fonts/AdwaitaMono-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 
 
 @font-face {
-    font-family: 'Adwaita Mono Italic';
-    src: url(assets/fonts/AdwaitaMono-Italic.ttf);
+    font-family: 'Adwaita Mono';
+    src: url(assets/fonts/AdwaitaMono-Italic.ttf) format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'Adwaita Mono Bold';
-    src: url(assets/fonts/AdwaitaMono-Bold.ttf);
+    font-family: 'Adwaita Mono';
+    src: url(assets/fonts/AdwaitaMono-Bold.ttf) format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'Adwaita Mono Bold Italic';
-    src: url(assets/fonts/AdwaitaMono-BoldItalic.ttf);
+    font-family: 'Adwaita Mono';
+    src: url(assets/fonts/AdwaitaMono-BoldItalic.ttf) format('truetype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Adwaita Sans';
-    src: url(assets/fonts/AdwaitaSans-Regular.ttf);
+    src: url(assets/fonts/AdwaitaSans-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'Adwaita Sans Italic';
-    src: url(assets/fonts/AdwaitaSans-Italic.ttf);
+    font-family: 'Adwaita Sans';
+    src: url(assets/fonts/AdwaitaSans-Italic.ttf) format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
 }
 
 body {
@@ -34,13 +52,13 @@ body {
 }
 
 h1 {
-    font-family: 'Adwaita Mono';
+    font-family: 'Adwaita Mono', monospace;
     text-align: center;
     color: #8ad6b7;
 }
 
 h2 {
-    font-family: 'Adwaita Sans';
+    font-family: 'Adwaita Sans', sans-serif;
     text-align: center;
     color: #fefefe;
 }
@@ -53,7 +71,7 @@ img {
 }
 
 p {
-    font-family: 'Adwaita Sans';
+    font-family: 'Adwaita Sans', sans-serif;
     text-align: center;
     color: #fefefe;
 }
