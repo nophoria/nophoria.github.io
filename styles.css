@@ -53,7 +53,6 @@ html, body {
 
 html {
     display: table;
-    margin: 8%;
     overflow: hidden;
 }
 
@@ -61,6 +60,7 @@ body {
     background: #111111;
     display: table-cell;
     vertical-align: middle;
+    margin: 8%;
 }
 
 body::before {
