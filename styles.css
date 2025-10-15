@@ -51,6 +51,29 @@ body {
     background: #111111;
 }
 
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background-image: radial-gradient(circle at 2px 2px, #333 2px, transparent 0);
+    background-size: 50px 50px;
+    transform: translate(0, 0);
+    animation: scrollBg 10s linear infinite;
+    z-index: -1;
+}
+
+@keyframes scrollBg {
+    0% {
+        transform: translate(0, 0)
+    }
+    100% {
+        transform: translate(-50px, -50px)
+    }
+}
+
 h1 {
     font-family: 'Adwaita Mono', monospace;
     text-align: center;
@@ -67,7 +90,7 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 50%;
 }
 
 p {
